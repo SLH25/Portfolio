@@ -58,11 +58,11 @@ return(
                         </p>
                     
                         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 animate-fade-in-up animation-delay-800">
-            <a href="#projects"
+            <a href="#skills"
               className="px-8 flex py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-colors duration-300 transform hover:scale-105 font-medium"
             >
               <Briefcase className="mr-2 h-5 w-5 group-hover:animate-pulse" />
-              View My Work
+              My skills
             </a>
             <a href="#contact" 
               className="flex px-8 py-3 bg-transparent border-2 border-white text-white  hover:bg-black rounded-full transition-all duration-300 transform hover:scale-105 font-medium"
