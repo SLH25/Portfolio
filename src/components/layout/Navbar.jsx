@@ -5,7 +5,7 @@ const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
+  { name: "Capabilities", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -83,7 +83,7 @@ export default function Navbar() {
                   activeSection === item.href.replace("#", "")
                     ? "text-blue-400 border-b-2 border-blue-400"
                     : "text-white/80 hover:text-blue-400"
-                }`}
+                } transition-colors duration-300 pb-1`}
                 
               >
                 {item.name}
@@ -121,11 +121,12 @@ export default function Navbar() {
               <a
                 key={item.name}
                 href={item.href}
+                onClick={() => setMenuOpen(false)}
                 className={`${
                   activeSection === item.href.replace("#", "")
                     ? "text-blue-400"
                     : "text-white/80 hover:text-blue-400"
-                }`}
+                } transition-colors duration-300`}
                 
               >
                 {item.name}

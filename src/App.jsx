@@ -6,6 +6,7 @@ import Contact from './components/section/Contact'
 import Footer from './components/layout/Footer'
 import Scroll from './components/layout/Scroll'
 import Skills from './components/section/Skills'
+import Capabilities from './components/section/Capabilities'
 import Welcome from './components/layout/Welcome'
 
 
@@ -37,6 +38,7 @@ useEffect(() => {
       <Hero/>
       <About/>
       <Skills/>
+      <Capabilities/>
       <Contact/>
       <Footer/>
       <Scroll/>
