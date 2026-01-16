@@ -3,28 +3,28 @@ import React from 'react';
 // import { SiFigma, SiCanva, SiAdobeillustrator, SiSpline, SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiReact, SiNextdotjs, SiBootstrap, SiPhp, SiPython, SiDjango, SiNodedotjs, SiMysql, SiPostgresql, SiMongodb, SiGit, SiGithub, SiVercel, SiNetlify, SiWordpress, SiJson, SiTypescript, SiFramer, SiRedux, SiZustand, SiPrisma } from "react-icons/si";
 // import { SiPline  } from "react-icons/si";
 
-import { SiFigma,  SiWebflow, SiFireship, SiXampp, SiCanva, SiAdobeillustrator, SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiReact, SiNextdotjs, SiBootstrap, SiTypescript, SiPhp, SiPython, SiDjango, SiNodedotjs, SiMysql, SiPostgresql, SiMongodb, SiGit, SiGithub, SiVercel, SiNetlify, SiWordpress, SiJson, SiRedux,  } from "react-icons/si";
+import { SiFigma,  SiWebflow, SiFireship, SiXampp, SiCanva, SiAdobeillustrator, SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiReact, SiNextdotjs, SiBootstrap, SiTypescript, SiPhp, SiPython, SiDjango, SiNodedotjs, SiMysql, SiPostgresql, SiMongodb, SiGit, SiGithub, SiVercel, SiNetlify, SiWordpress, SiJson, SiRedux,  SiProbot, SiThreedotjs } from "react-icons/si";
 
  const skillsData = [
     {
-      title: "💻 Frontend",
+      title: "💻 Core Development",
       skills: [
-        { name: "HTML", icon: SiHtml5 },
-        { name: "CSS", icon: SiCss3 },
-        { name: "Tailwind CSS", icon: SiTailwindcss },
+        { name: "HTML/css", icon: SiHtml5 },
+        // { name: "CSS", icon: SiCss3 },
+        { name: "Tailwind CSS", icon: SiTailwindcss },            
         { name: "JavaScript", icon: SiJavascript },
         { name: "React", icon: SiReact },
-        { name: "Next.js", icon: SiNextdotjs },
-        { name: "Bootstrap", icon: SiBootstrap },
+        // { name: "Bootstrap", icon: SiBootstrap },
         { name: "TypeScript", icon: SiTypescript },
+        { name: "PHP", icon: SiPhp },
+        { name: "Django", icon: SiDjango },
       ],
     },
     {
-      title: "🛠️ Backend",
+      title: "🛠️ Additional Languages & Learning",
       skills: [
-        { name: "PHP", icon: SiPhp },
         { name: "Python", icon: SiPython },
-        { name: "Django", icon: SiDjango },
+        { name: "Next.js", icon: SiNextdotjs },
         { name: "Node.js", icon: SiNodedotjs },
       ],
     },
@@ -53,16 +53,17 @@ import { SiFigma,  SiWebflow, SiFireship, SiXampp, SiCanva, SiAdobeillustrator, 
         { name: "Figma", icon: SiFigma },
         { name: "Canva", icon: SiCanva },
         { name: "Illustrator", icon: SiAdobeillustrator },
-        // { name: "Spline", icon: SiSpline },
+        { name: "Three.js", icon: SiThreedotjs },
       ],
     },
     {
       title: "🧠 Order",
       skills: [
         { name: "WordPress", icon: SiWordpress },
+        // { name: "Redux", icon: SiRedux },
+        { name: "Webflow", icon:SiWebflow},
         { name: "API / JSON", icon: SiJson },
-        { name: "Redux", icon: SiRedux },
-        { name: "Webflow", icon:SiWebflow}
+        { name: "AI-Assisted Workflow", icon: SiProbot },
         // { name: "Zustand", icon: SiZustand },
       ],
     },
@@ -76,11 +77,11 @@ export default function Skills() {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                        MY SKILLS
+                    Skills & Technologies
                     </h2>
                     <div className="h-1 w-24 bg-blue-600 dark:bg-blue-400 mx-auto mb-6"></div>
                     <p className="text-white max-w-2xl mx-auto">
-                        I have experience with a variety of technologies in web development. Here&apos;s a breakdown of my technical skillset.
+                    A focused set of tools and skills I use to build practical, real-world digital solutions.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

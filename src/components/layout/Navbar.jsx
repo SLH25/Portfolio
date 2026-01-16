@@ -9,7 +9,7 @@ const navItems = [
   { name: "Contact", href: "#contact" },
 ];
 
-export default function Header() {
+export default function Navbar() {
   const [activeSection, setActiveSection] = useState(""); 
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -68,8 +68,8 @@ export default function Header() {
         >
           <div className="container mx-auto px-4 flex items-center justify-between">
             <a href="#home" className="flex items-center gap-2 text-xl font-bold text-white hover:text-blue-400 transition-colors duration-300">
-            <Code2 className="h-7 w-7" />
-            <span >Salihou</span>
+            {/* <Code2 className="h-7 w-7" /> */}
+            <span >&lt; SLH / IA &gt;</span>
             </a>
           </div>
 

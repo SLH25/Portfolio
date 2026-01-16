@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileCode, Monitor, Server, Database, } from 'lucide-react';
+import { FileCode, Monitor, Server, Database, Layers, Lightbulb, TrendingUp, BrainCircuit,  } from 'lucide-react';
 
 
 export default function About(){
@@ -19,13 +19,13 @@ export default function About(){
                 <div  className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className="order-2 lg:order-1">
                         <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                            Hello! I'm <span className="font-semibold text-blue-600 dark:text-blue-400">SALIHOU</span>, a passionate junior full-stack developer with a love for creating seamless, user-friendly web applications. With a strong foundation in both front-end and back-end technologies, I bring ideas to life through clean code and thoughtful design.
+                        I hold a Bachelor’s degree in Software Engineering from Jagora University, where I built strong foundations in programming and system thinking.
                         </p>
                         <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                            My journey into programming began with curiosity about how websites work, which evolved into a deep passion for development. I'm constantly learning and staying up-to-date with the latest technologies to ensure I deliver modern, efficient solutions.
+                        To deepen my technical skills and gain international exposure, I continued my studies at KL University, known for its strong focus on engineering and technology.              
                         </p>
                         <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-                            When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge with the developer community.
+                        I am currently focusing on web systems, automation, and intelligent digital solutions, while exploring data-driven and cloud-oriented approaches as part of my long-term growth.
                         </p>
             
                         <div className="flex flex-wrap space-x-4">
@@ -42,49 +42,49 @@ export default function About(){
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="rounded-2xl bg-gradient-to-br from-black via-gray-900 to-black border border-transparent hover:border-blue-600 transition duration-300 shadow-lg p-6">
                                 <div className="text-blue-600 dark:text-blue-400 mb-4">
-                                    <Monitor size={48} />
+                                    <Layers size={48} />
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                                    Frontend
+                                Full-Stack Development
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    Creating beautiful, responsive UI/UX with React, Tailwind CSS, and modern JavaScript.
+                                Building complete web solutions from frontend interfaces to backend logic and APIs.
                                 </p>
                             </div>
               
                             <div className="rounded-2xl bg-gradient-to-br from-black via-gray-900 to-black border border-transparent hover:border-blue-600 transition duration-300 shadow-lg p-6">
                                 <div className="text-blue-600 dark:text-blue-400 mb-4">
-                                    <Server size={48} />
+                                    <Lightbulb size={48} />
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                                    Backend
+                                Solution-Driven Thinking
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    Building robust APIs and server logic with Node.js, Express, and REST principles.
+                                I focus on understanding problems first, then designing practical and effective digital solutions.
                                 </p>
                             </div>
               
                             <div className="rounded-2xl bg-gradient-to-br from-black via-gray-900 to-black border border-transparent hover:border-blue-600 transition duration-300 shadow-lg p-6">
                                 <div className="text-blue-600 dark:text-blue-400 mb-4">
-                                    <Database size={48} />
+                                    <TrendingUp size={48} />
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                                    Database
+                                Growth & Direction
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    Designing efficient data structures with MongoDB, PostgreSQL, and Firebase.
+                                Continuously improving my skills while moving toward data-driven and cloud-based systems.
                                 </p>
                             </div>
               
                             <div className="rounded-2xl bg-gradient-to-br from-black via-gray-900 to-black border border-transparent hover:border-blue-600 transition duration-300 shadow-lg p-6">
                                 <div className="text-blue-600 dark:text-blue-400 mb-4">
-                                    <FileCode size={48} />
+                                    <BrainCircuit size={48} />
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
-                                    Desing Annimation
+                                AI-Assisted Workflow
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    Desing a efficient structures of logo, affiche, template, mokup and annimation with IA
+                                AI helps me learn faster, think better, and solve problems more efficiently.
                                 </p>
                             </div>
                         </div>

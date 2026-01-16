@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Header  from './components/layout/Header'
+import Navbar from './components/layout/Navbar'
 import Hero   from './components/section/Hero'
 import About from './components/section/About'
 import Contact from './components/section/Contact'
@@ -33,7 +33,7 @@ useEffect(() => {
   return (
     <>
     {/* <Welcome/> */}
-      <Header/>
+      <Navbar/>
       <Hero/>
       <About/>
       <Skills/>

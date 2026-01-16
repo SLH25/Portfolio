@@ -3,7 +3,7 @@ import { ArrowDownCircle, ArrowDown, Briefcase, MessageSquare } from 'lucide-rea
 
 export default function Hero(){
 
-const roles=["Full-stack developper", "Desingner","Tech Enthusiast"]
+const roles=["Software Engineering Student", "Digital Solutions Builder","Technology Problem Solver"]
 const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 const [displayedRole, setDisplayedRole] = useState("");
 const [isDeleting, setIsDeleting] = useState(false);
@@ -42,17 +42,19 @@ return(
                             Hello, I'm
                         </p>
                         <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 animate-fade-in-up animation-delay-200">
-                            SALIHOU
+                            SALIHOU OUMAROU
                         </h1>
                         <div className="animate-fade-in-up animation-delay-400 min-h-[3rem] sm:min-h-[4rem]">
                           <p className="text-2xl sm:text-3xl text-white md:text-4xl font-semibold text-foreground">
-                            A <span className="text-blue-600 font-bold">{displayedRole}</span>
+                            - <span className="text-blue-600 font-bold">{displayedRole}</span>
                             <span className="inline-block animate-blink">|</span>
                           </p>
                         </div>
 
                         <p className="text-gray-200 dark:text-gray-300 text-lg md:text-xl mb-12 animate-fade-in-up animation-delay-600">
-                        I build dynamic and responsive web applications with a focus on user experience and performance. Passionate about learning new technologies and solving complex problems.
+                          I build smart digital solutions focused on real-world problems.
+                            <br />
+                          From web platforms and automation tools to custom software, I focus on building practical and scalable solutions.
                         </p>
                     
                         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 animate-fade-in-up animation-delay-800">
