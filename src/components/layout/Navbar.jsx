@@ -17,19 +17,69 @@ export default function Navbar() {
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
 
+    // Fonction pour détecter la section active au scroll
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 150; // Offset pour la navbar
+
+      let currentSection = "";
+      
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute("id");
+
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          currentSection = sectionId || "";
+        }
+      });
+
+      // Si on est tout en haut, activer home
+      if (window.scrollY < 100) {
+        currentSection = "home";
+      }
+
+      if (currentSection) {
+        setActiveSection(currentSection);
+      }
+    };
+
+    // Observer avec IntersectionObserver pour détecter les sections visibles
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
+        // Trouve la section la plus visible
+        const visibleSections = entries.filter(entry => entry.isIntersecting);
+        
+        if (visibleSections.length > 0) {
+          // Trie par position dans la vue (la plus proche du haut d'abord)
+          visibleSections.sort((a, b) => {
+            const rectA = a.boundingClientRect;
+            const rectB = b.boundingClientRect;
+            return Math.abs(rectA.top) - Math.abs(rectB.top);
+          });
+          
+          setActiveSection(visibleSections[0].target.id);
+        }
       },
-      { threshold: 0.6 }
+      { 
+        threshold: [0.1, 0.3, 0.5],
+        rootMargin: "-20% 0px -70% 0px"
+      }
     );
 
+    // Observer toutes les sections
     sections.forEach((section) => observer.observe(section));
-    return () => sections.forEach((section) => observer.unobserve(section));
+    
+    // Ajouter l'event listener pour le scroll
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Appel initial pour définir la section active au chargement
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   useEffect(() => {
