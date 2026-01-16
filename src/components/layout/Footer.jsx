@@ -1,24 +1,24 @@
 import React from 'react';
-import { ChevronUp, Github, Instagram, PhoneCall,MessageCircleCode} from 'lucide-react';
+// import { ChevronUp, Github, Instagram, PhoneCall,MessageCircleCode} from 'lucide-react';
 
 export default function Footer(){
 
 
 
-        const socialIcon= [
-    {
-        icon: <Github />,
-        link: '#git'
-    },
-    {
-        icon: <Instagram />,
-        link: '#instagram'
-    },
-    {
-        icon: <MessageCircleCode />,
-        link: '#instagram'
-    }
-]
+//         const socialIcon= [
+//     {
+//         icon: <Github />,
+//         link: '#git'
+//     },
+//     {
+//         icon: <Instagram />,
+//         link: '#instagram'
+//     },
+//     {
+//         icon: <MessageCircleCode />,
+//         link: '#instagram'
+//     }
+// ]
 
     return(
         <footer className="bg-gradient-to-br from-black via-gray-900 to-black border-t text-white">
@@ -27,9 +27,10 @@ export default function Footer(){
                     <div>
                         <h3 className="text-2xl font-bold mb-6">SALIHOU</h3>
                         <p className="text-gray-400 mb-4">
-                            A passionate full-stack developer focused on creating clean, user-friendly applications.
+                        I build smart digital solutions focused on real-world problems.
+                        From web platforms and automation tools to custom software, I focus on building practical and scalable solutions.
                         </p>
-                        <div className="flex space-x-4">
+                        {/* <div className="flex space-x-4">
                             {socialIcon.map((social, index) => (
                             <a key={index} href={social.link}
                             className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-colors"
@@ -38,13 +39,13 @@ export default function Footer(){
                                 {social.icon}
                             </a>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
 
                     <div>
                         <h3 className="text-xl font-semibold mb-6">Quick Links</h3>
                         <ul className="space-y-3">
-                            {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((link) => (
+                            {['Home', 'About', 'Skills', 'Capabilities', 'Contact'].map((link) => (
                             <li key={link}>
                                 <a href={`#${link.toLowerCase()}`}
                                 className="text-gray-400 hover:text-blue-400 transition-colors"
@@ -71,10 +72,10 @@ export default function Footer(){
                   +237 691-175-811
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <span className="block">Location:</span>
                 <span>City, Country</span>
-              </li>
+              </li> */}
                         </ul>
                     </div>
 
