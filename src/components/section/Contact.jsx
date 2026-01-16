@@ -195,7 +195,8 @@ export default function Contact() {
           <div className="h-1 w-24 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Interested in working together or discussing a project?
-            I'm open to opportunities, collaborations, and meaningful conversations.
+            I'm open to opportunities, collaborations, and meaningful conversations. <br />
+            I’m open to internships, remote jobs, or freelance collaboration.
           </p>
         </div>
 
