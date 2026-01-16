@@ -29,12 +29,12 @@ export default function About(){
                         </p>
             
                         <div className="flex flex-wrap space-x-4">
-                            <a href="#contact" className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors duration-300 mb-3">
+                            <a href="#contact" className="px-6 py-3 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 rounded-md transition-colors duration-300 mb-3">
                                 Get In Touch
                             </a>
-                            <a href="#" className="px-6 py-3 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 rounded-md transition-colors duration-300 mb-3">
+                            {/* <a href="#" className="px-6 py-3 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 rounded-md transition-colors duration-300 mb-3">
                                 Download CV
-                            </a>
+                            </a> */}
                         </div>
                     </div>
 
